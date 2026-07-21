@@ -2,12 +2,12 @@
 const { title, content } = Astro.props;
 ---
 
-<div class="card card-border bg-neutral text-neutral-content shadow-md">
+<div class="card card-border bg-base-200 text-base-content shadow-md">
 	<div class="card-body">
-		<h2 class="card-title">{title}</h2>
-		<p>{content}</p>
+		<h2 class="card-title text-primary">{title}</h2>
+		<ul>{content}</ul>
 		<div class="card-actions justify-end">
-			<button class="btn btn-primary">View</button>
+			<button class="btn btn-secondary">View</button>
 		</div>
 	</div>
 </div>

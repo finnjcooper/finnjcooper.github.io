@@ -1,6 +1,8 @@
 ---
 import '../styles/global.css';
+import Panel from '../components/Panel.astro';
 import Header from '../sections/Header.astro';
+import Hero from '../sections/Hero.astro';
 import Projects from '../sections/Projects.astro';
 ---
 
@@ -10,14 +12,15 @@ import Projects from '../sections/Projects.astro';
 		<link rel="icon" href="/favicon.ico" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Portfolio</title>
+		<title>Website</title>
 	</head>
 	<body>
 		<header>
 			<Header/>
 		</header>
 		<main>
-			<Projects/>
+			<Panel weight="100"><Hero/></Panel>
+			<!-- <Panel weight="300"><Projects/></Panel> -->
 		</main>
 	</body>
 </html>
