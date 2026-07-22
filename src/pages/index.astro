@@ -19,8 +19,12 @@ import Projects from '../sections/Projects.astro';
 			<Header/>
 		</header>
 		<main>
-			<Panel weight="100"><Hero/></Panel>
-			<!-- <Panel weight="300"><Projects/></Panel> -->
+			<Panel>
+				<Hero/>
+			</Panel>
+			<Panel weight={300}>
+				<Projects/>
+			</Panel>
 		</main>
 	</body>
 </html>

@@ -3,10 +3,16 @@ import projects from '../data/projects.json';
 import Card from '../components/Card.astro';
 ---
 <div class="grid grid-cols-3 gap-4 p-12" id="projects">
-	{projects.map(project =>
+	{[0, 1, 2, 3, 4, 5].map((_, index) => (
+		<Card
+			title={`Example #${index}`}
+			content={[`Example content for project #${index}.`, `et cetera`, `et cetera`, `et cetera`].map((item) => <li>{item}</li>)}
+		/>
+	))}
+	<!-- {projects.map(project =>
 		<Card
 			title={project.title}
 			content={project.content?.map((item) => <li>{item}</li>)}
 		/>
-	)}
+	)} -->
 </div>
