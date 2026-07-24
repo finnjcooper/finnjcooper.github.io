@@ -1,18 +1,22 @@
 ---
-import projects from '../data/projects.json';
-import Card from '../components/Card.astro';
+import projects from '@data/projects.json';
+import Panel from '@components/Panel.astro';
+import Card from '@components/Card.astro';
 ---
-<div class="grid grid-cols-3 gap-4 p-12" id="projects">
-	{[0, 1, 2, 3, 4, 5].map((_, index) => (
-		<Card
-			title={`Example #${index}`}
-			content={[`Example content for project #${index}.`, `et cetera`, `et cetera`, `et cetera`].map((item) => <li>{item}</li>)}
-		/>
-	))}
-	<!-- {projects.map(project =>
-		<Card
-			title={project.title}
-			content={project.content?.map((item) => <li>{item}</li>)}
-		/>
-	)} -->
-</div>
+
+<Panel weight={300}>
+	<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 p-12 scroll-mt-16" id="projects">
+		{[0, 1, 2, 3, 4, 5].map((_, index) => (
+			<Card
+				title={`Example #${index}`}
+				content={[`Example content for project #${index}.`, `et cetera`, `et cetera`, `et cetera`].map((item) => <li>{item}</li>)}
+			/>
+		))}
+		<!-- {projects.map(project =>
+			<Card
+				title={project.title}
+				content={project.content?.map((item) => <li>{item}</li>)}
+			/>
+		)} -->
+	</div>
+</Panel>

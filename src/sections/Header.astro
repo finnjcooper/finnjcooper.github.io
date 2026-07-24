@@ -1,19 +1,19 @@
 ---
-import Panel from '../components/Panel.astro';
+import Panel from '@components/Panel.astro';
+const { fixed = false }: { fixed?: boolean } = Astro.props;
 ---
 
-<div class="fixed z-50">
+<header class={`${fixed ? 'fixed' : 'sticky'} z-50 top-0 border-b border-secondary`}>
 	<Panel weight={200}>
-		<div class="navbar">
+		<nav class="navbar px-0">
 			<div class="flex-1">
-				<a class="btn btn-ghost text-xl" href="/">Home</a>
+				<a class="btn btn-ghost text-2xl" href="/"><span class="text-transparent bg-clip-text bg-gradient-to-r from-info via-primary to-error">Home</span></a>
 			</div>
 			<div class="flex-none">
 				<ul class="menu menu-horizontal px-1">
-					<li><a href="/#hero">About</a></li>
-					<li><a href="/#projects">Projects</a></li>
+					<li><a href="/projects">Projects</a></li>
 				</ul>
 			</div>
-		</div>
+		</nav>
 	</Panel>
-</div>
+</header>
