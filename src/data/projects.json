@@ -19,7 +19,7 @@
         { "type": "preview", "src": "/projects/shifting-sands/report-preview.png", "full": "/projects/shifting-sands/report.pdf", "alt": "Report" }
     ],
     "source": "https://github.com/lm22433/2024-SealTeam7",
-    "coverImage": "hero-background.png",
+    "coverImage": "/projects/shifting-sands/hero-background.png",
     "tags": ["C#", "Unity", "OpenCV", "Azure Kinect SDK"]
   },
   {
@@ -36,7 +36,7 @@
     "media": [
       { "type": "image", "src": "/projects/rasteriser-raytracer/raytraced-scene-skybox.png", "alt": "Ray-traced Scene" }
     ],
-    "coverImage": "raytraced-scene-skybox.png",
+    "coverImage": "/projects/rasteriser-raytracer/raytraced-scene-skybox.png",
     "source": "https://github.com/sd22404/COMS30020",
     "tags": ["C++", "SDL2", "OpenMP"]
   },
@@ -54,7 +54,7 @@
     "media": [
       { "type": "image", "src": "/projects/livestock-management/calendar.png", "alt": "Calendar View" }
     ],
-    "coverImage": "calendar.png",
+    "coverImage": "/projects/livestock-management/calendar.png",
     "demo": "https://cityfarm.murraygrov.es",
     "tags": ["React", "TypeScript", "Spring Boot", "Java", "MongoDB", "Docker"]
   },
@@ -71,7 +71,7 @@
     "media": [
       { "type": "preview", "src": "/projects/game-of-life/report-preview.png", "full": "/projects/game-of-life/report.pdf", "alt": "Report" }
     ],
-    "coverImage": "report-cover.png",
+    "coverImage": "/projects/game-of-life/report-cover.png",
     "tags": ["Go", "SDL2", "AWS"]
   },
   {
@@ -82,7 +82,7 @@
     "media": [
       { "type": "image", "src": "/projects/portfolio-website/homepage.png", "alt": "Homepage Screenshot" }
     ],
-    "coverImage": "homepage.png",
+    "coverImage": "/projects/portfolio-website/homepage.png",
     "source": "https://github.com/sd22404/portfolio",
     "tags": ["Next.js", "React", "TypeScript", "Tailwind CSS", "CI/CD"]
   },
@@ -94,7 +94,7 @@
     "media": [
       { "type": "image", "src": "/projects/valorant-tracker/homepage.png", "alt": "Homepage Screenshot" }
     ],
-    "coverImage": "homepage.png",
+    "coverImage": "/projects/valorant-tracker/homepage.png",
     "source": "https://github.com/lm22433/valorant-store-tracker",
     "tags": ["Tauri", "Rust", "React", "TypeScript", "External API"]
   }

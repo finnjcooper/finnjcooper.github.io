@@ -3,8 +3,14 @@ interface Props {
 	weight?: 100 | 200 | 300;
 }
 
+const bgs: Record<number, string> = {
+	100: 'bg-base-100',
+	200: 'bg-base-200',
+	300: 'bg-base-300',
+};
+
 const { weight = 100 } = Astro.props as Props;
-const bg = `bg-base-${weight}`;
+const bg = bgs[weight];
 ---
 
 <section class={`${bg} text-base-content flex flex-1 w-screen`}>

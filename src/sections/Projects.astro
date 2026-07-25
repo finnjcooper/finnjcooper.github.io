@@ -5,18 +5,14 @@ import Card from '@components/Card.astro';
 ---
 
 <Panel weight={300}>
-	<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 p-12 scroll-mt-16" id="projects">
-		{[0, 1, 2, 3, 4, 5].map((_, index) => (
-			<Card
-				title={`Example #${index}`}
-				content={[`Example content for project #${index}.`, `et cetera`, `et cetera`, `et cetera`].map((item) => <li>{item}</li>)}
-			/>
-		))}
-		<!-- {projects.map(project =>
+	<div class="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-4 p-12 scroll-mt-16" id="projects">
+		{projects.map(project =>
 			<Card
 				title={project.title}
-				content={project.content?.map((item) => <li>{item}</li>)}
+				image={project.coverImage}
+				// content={<ul>{project.content?.map((item) => <li>{item}</li>)}</ul>}
+				actions={<a class="btn btn-sm btn-soft btn-primary" href={`/projects/${project.slug}`}>View Project</a>}
 			/>
-		)} -->
+		)}
 	</div>
 </Panel>
