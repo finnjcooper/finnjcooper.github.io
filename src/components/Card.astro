@@ -1,15 +1,26 @@
 ---
-const { title, image, content, actions } = Astro.props;
+interface Props {
+	title: string;
+	date?: string;
+	image?: string;
+	content: any;
+	actions?: any;
+}
+
+const { title, date, image, content, actions } = Astro.props as Props;
 ---
 
-<div class="card card-border bg-base-200 text-base-content shadow-md">
+<div class="card card-border flex-1 bg-base-200 text-base-content shadow-md">
 	{image && (
 		<figure>
 			<img src={image} alt={title}/>
 		</figure>
 	)}
 	<div class="card-body">
-		<h2 class="card-title text-primary">{title}</h2>
+		<div class="flex gap-4 items-center justify-between">
+			<h2 class="card-title text-primary">{title}</h2>
+			{date && <p class="text-sm text-base-content/70 text-right">{date}</p>}
+		</div>
 		<div>{content}</div>
 		{actions && (
 			<div class="card-actions justify-end mt-auto">

@@ -6,10 +6,19 @@ import Card from '@components/Card.astro';
 <Section id="education" title="Education" weight={300}>
 	<Card
 		title="University of Bristol"
-		content="Master of Engineering in Computer Science (First Class Honours)"
+		date="2022-2026"
+		content={<p>Master of Engineering in Computer Science (First Class Honours)</p>}
 	/>
-	<Card
-		title="Brighton Hove and Sussex Sixth Form College"
-		content="A-Levels in Mathematics (A*), Further Mathematics (A*), Computer Science (A*) and Physics (A)"
-	/>
+	<div class="flex gap-4">
+		<Card
+			title="Brighton Hove and Sussex Sixth Form College"
+			date="2020-2022"
+			content={<p>A-Levels in Maths, Further Maths, Computer Science, and Physics (A* A* A* A)</p>}
+		/>
+		<Card
+			title="Downlands Community School"
+			date="2015-2020"
+			content={<p>11 GCSEs including Computer Science, Music, German and Geography</p>}
+		/>
+	</div>
 </Section>

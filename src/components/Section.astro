@@ -13,7 +13,7 @@ const { id, title, weight = 100, centred = false } = Astro.props as Props;
 
 <Panel weight={weight}>
 	<div class={`flex flex-col flex-1 gap-4 py-16 scroll-mt-16 ${centred && "justify-center items-center"}`} id={id}>
-		{title && <h2 class="text-4xl font-bold mb-4">{title}</h2>}
+		{title && <h1 class="mb-4">{title}</h1>}
 		<slot/>
 	</div>
 </Panel>

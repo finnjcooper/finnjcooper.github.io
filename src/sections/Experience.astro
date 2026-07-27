@@ -1,0 +1,48 @@
+---
+import Section from '@components/Section.astro';
+import Card from '@components/Card.astro';
+---
+
+<Section id="experience" title="Experience" weight={100}>
+	<Card
+		title="Graduate Software Engineer - Graphcore Ltd"
+		date="2026-"
+		content={<p>Upcoming.</p>}
+	/>
+	<div class="flex gap-4">
+		<Card
+			title="Graduate Teacher Level 1 - University of Bristol"
+			date="2025-2026"
+			content={<p>
+				Supported teaching of lab sessions for the Computer Graphics unit:
+				<ul>
+					<li>Guided other students through both technical and theoretical issues.</li>
+					<li>Addressed questions about course structure and further study.</li>
+				</ul>
+			</p>}
+		/>
+		<Card
+			title="Graduate Teacher Level 2 - University of Bristol"
+			date="2025-2026"
+			content={<p>
+				Mentored a team of students on their Software Engineering Project:
+				<ul>
+					<li>Ensured all members were organised and regularly contributing.</li>
+					<li>Advised them on planning, designing, and building their software.</li>
+					<li>Gave weekly feedback on their progress and answered any questions.</li>
+				</ul>
+			</p>}
+		/>
+	</div>
+	<Card
+		title="Work Experience Intern - MakeReal Ltd"
+		date="2019"
+		content={<p>
+			<ul>
+				<li>Immersed myself in the workings of a small VR company.</li>
+				<li>Took part in daily stand-ups, user-tested in-development products.</li>
+				<li>Created an interactive VR game in Unity with a co-worker.</li>
+			</ul>
+		</p>}
+	/>
+</Section>
