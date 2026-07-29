@@ -37,7 +37,7 @@
       { "type": "image", "src": "/projects/rasteriser-raytracer/raytraced-scene-skybox.png", "alt": "Ray-traced Scene" }
     ],
     "coverImage": "/projects/rasteriser-raytracer/raytraced-scene-skybox.png",
-    "source": "https://github.com/sd22404/COMS30020",
+    "source": "https://github.com/finnjcooper/COMS30020",
     "tags": ["C++", "SDL2", "OpenMP"]
   },
   {
@@ -75,27 +75,19 @@
     "tags": ["Go", "SDL2", "AWS"]
   },
   {
-    "slug": "portfolio-website",
-    "ticker": "WEB",
-    "title": "Portfolio Website",
-    "description": "This very website, built with Next.js! Showcases my other projects and experience.",
-    "media": [
-      { "type": "image", "src": "/projects/portfolio-website/homepage.png", "alt": "Homepage Screenshot" }
+    "slug": "asymphony",
+    "ticker": "ASM",
+    "title": "ASyMphony",
+    "description": "...",
+    "content": [
+      ""
     ],
-    "coverImage": "/projects/portfolio-website/homepage.png",
-    "source": "https://github.com/sd22404/portfolio",
-    "tags": ["Next.js", "React", "TypeScript", "Tailwind CSS", "CI/CD"]
-  },
-  {
-    "slug": "valorant-tracker",
-    "ticker": "VAL",
-    "title": "Valorant Tracker",
-    "description": "A WIP desktop app to provide easy access to in-game information like current store, current match, and match history.",
     "media": [
-      { "type": "image", "src": "/projects/valorant-tracker/homepage.png", "alt": "Homepage Screenshot" }
+      { "type": "image", "src": "/projects/asymphony/interface.png", "alt": "The ASyMphony Interface" }
     ],
-    "coverImage": "/projects/valorant-tracker/homepage.png",
-    "source": "https://github.com/lm22433/valorant-store-tracker",
-    "tags": ["Tauri", "Rust", "React", "TypeScript", "External API"]
+    "coverImage": "/projects/asymphony/interface.png",
+    "source": "https://github.com/finnjcooper/music-machine",
+    "demo": "https://finnjcooper.github.io/music-machine/",
+    "tags": ["TypeScript", "React"]
   }
 ]

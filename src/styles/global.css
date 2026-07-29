@@ -43,6 +43,6 @@
 	}
 
 	ul {
-		@apply text-base list-disc list-inside;
+		@apply text-base list-disc list-outside pl-4;
 	}
 }
