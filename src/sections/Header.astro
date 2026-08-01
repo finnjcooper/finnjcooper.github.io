@@ -1,17 +1,26 @@
 ---
 import Panel from '@components/Panel.astro';
-const { fixed = false }: { fixed?: boolean } = Astro.props;
+
+interface Props {
+	fixed?: boolean;
+	links?: { name: string; href: string }[];
+}
+
+const { fixed = false, links = [] } = Astro.props as Props;
 ---
 
 <header class={`${fixed ? 'fixed' : 'sticky'} z-50 top-0 border-b border-secondary`}>
 	<Panel weight={200}>
-		<nav class="navbar px-0">
+		<nav class="navbar font-mono px-0">
 			<div class="flex-1">
-				<a class="btn btn-ghost text-2xl" href="/"><span class="text-transparent bg-clip-text bg-gradient-to-r from-info via-primary to-error">Home</span></a>
+				<!-- active:bg-neutral/80 translate-0 -->
+				<a class="btn btn-ghost hover:bg-neutral/20 text-2xl" href="/"><span class="text-transparent bg-clip-text bg-gradient-to-r from-info via-primary to-error">Home</span></a>
 			</div>
 			<div class="flex-none">
 				<ul class="menu menu-horizontal px-1">
-					<li><a href="/projects"><p>Projects</p></a></li>
+					{links.map((link) => (
+						<li><a href={link.href}><p>{link.name}</p></a></li>
+					))}
 				</ul>
 			</div>
 		</nav>

@@ -4,15 +4,45 @@ import Section from '@components/Section.astro';
 import Card from '@components/Card.astro';
 ---
 
-<Section id="projects" weight={300} centred>
-	<div class="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-4 p-12">
+<Section id="projects" title="Projects" weight={300}>
+	<div class="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-4">
 		{projects.map(project =>
 			<Card
 				title={project.title}
 				image={project.coverImage}
-				// content={<ul>{project.content?.map((item) => <li>{item}</li>)}</ul>}
-				actions={<a class="btn btn-sm btn-soft btn-primary" href={`/projects/${project.slug}`}>View Project</a>}
+				content={<p>{project.description}</p>}
+				actions={<button class="btn btn-sm btn-soft btn-primary" popovertarget={project.slug}>More Info</button>}
 			/>
+
+			<div class="modal" id={project.slug} popover>
+				<div class="modal-box max-w-xl lg:max-w-3xl xl:max-w-5xl 2xl:max-w-7xl max-h-[calc(100vh-6rem)] overflow-y-auto">
+					<div class="flex flex-col gap-4">
+						<h2>{project.title}</h2>
+						<div class="carousel carousel-center rounded-box bg-base-200 border border-secondary shadow-lg">
+							{project.media.map((media) =>
+								<div class="carousel-item max-h-128 w-full justify-center">
+									{(() => {
+										switch (media.type) {
+											case "image": return <img src={media.src} alt={media.alt} class="object-contain"/>
+											case "video": return <video src={media.src} controls preload="metadata" class="object-contain"/>
+											case "preview": return <img src={media.src} alt={media.alt} class="object-contain"/>
+											default: return null;
+										}
+									})()}
+								</div>
+							)}
+						</div>
+						<ul>{project.content && project.content.map((item: string) => <li>{item}</li>)}</ul>
+						<div class="modal-actions flex gap-4 justify-end mt-4"> 
+							{project.source && <a class="btn btn-soft btn-info" href={project.source} target="_blank">Source</a>}
+							{project.demo && <a class="btn btn-success" href={project.demo} target="_blank">Demo</a>}
+						</div>
+					</div>
+				</div>
+				<div class="modal-backdrop">
+					<button popovertarget={project.slug} popovertargetaction="hide">close</button>
+				</div>
+			</div>
 		)}
 	</div>
 </Section>
