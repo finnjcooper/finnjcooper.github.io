@@ -1,7 +1,6 @@
 [
   {
-    "slug": "shifting-sands",
-    "ticker": "SS",
+    "id": "shifting-sands",
     "title": "Shifting Sands",
     "description": "A mixed-media computer game using an Azure Kinect and lots of sand, made with Unity.",
     "content": [
@@ -18,13 +17,10 @@
         { "type": "video", "src": "/projects/shifting-sands/technical.mp4", "alt": "Technical Video" },
         { "type": "preview", "src": "/projects/shifting-sands/report-preview.png", "full": "/projects/shifting-sands/report.pdf", "alt": "Report" }
     ],
-    "source": "https://github.com/lm22433/2024-SealTeam7",
-    "coverImage": "/projects/shifting-sands/hero-background.png",
-    "tags": ["C#", "Unity", "OpenCV", "Azure Kinect SDK"]
+    "source": "https://github.com/lm22433/2024-SealTeam7"
   },
   {
-    "slug": "rasteriser-raytracer",
-    "ticker": "RAY",
+    "id": "rasteriser-raytracer",
     "title": "Interactive Ray-tracer",
     "description": "Interactive C++ software rasteriser and ray-tracer from scratch.",
     "content": [
@@ -36,24 +32,19 @@
     "media": [
       { "type": "image", "src": "/projects/rasteriser-raytracer/raytraced-scene-skybox.png", "alt": "Ray-traced Scene" }
     ],
-    "coverImage": "/projects/rasteriser-raytracer/raytraced-scene-skybox.png",
-    "source": "https://github.com/finnjcooper/COMS30020",
-    "tags": ["C++", "SDL2", "OpenMP"]
+    "source": "https://github.com/finnjcooper/COMS30020"
   },
   {
-    "slug": "asymphony",
-    "ticker": "ASM",
+    "id": "asymphony",
     "title": "ASyMphony / Music Machine",
     "description": "...",
     "content": [
-      ""
+      "..."
     ],
     "media": [
       { "type": "image", "src": "/projects/asymphony/interface.png", "alt": "The ASyMphony Interface" }
     ],
-    "coverImage": "/projects/asymphony/interface.png",
     "source": "https://github.com/finnjcooper/music-machine",
-    "demo": "https://finnjcooper.github.io/music-machine/",
-    "tags": ["TypeScript", "React"]
+    "demo": "https://finnjcooper.github.io/music-machine/"
   }
 ]
