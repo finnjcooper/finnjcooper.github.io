@@ -46,5 +46,18 @@
     ],
     "source": "https://github.com/finnjcooper/music-machine",
     "demo": "https://finnjcooper.github.io/music-machine/"
+  },
+  {
+    "id": "cpusim",
+    "title": "RISC-V CPU Simulator",
+    "description": "A C++ RISC-V CPU simulator compiled for WebAssembly.",
+    "content": [
+      "..."
+    ],
+    "media": [
+      { "type": "image", "src": "/projects/cpu-sim/placeholder.png", "alt": "The Simulator Interface" }
+    ],
+    "source": "https://github.com/finnjcooper/COMS30046",
+    "demo": "https://finnjcooper.github.io/cpu-sim/"
   }
 ]
