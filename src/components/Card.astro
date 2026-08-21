@@ -1,9 +1,9 @@
 ---
 interface Props {
-	title: string;
+	title?: string;
 	date?: string;
 	image?: string;
-	content: any;
+	content?: any;
 	actions?: any;
 }
 
@@ -18,10 +18,10 @@ const { title, date, image, content, actions } = Astro.props as Props;
 	)}
 	<div class="card-body">
 		<div class="flex gap-4 items-center justify-between">
-			<h2 class="card-title text-primary">{title}</h2>
+			{title && <h2 class="card-title text-primary">{title}</h2>}
 			{date && <p class="text-sm text-base-content/70 text-right">{date}</p>}
 		</div>
-		<div>{content}</div>
+		{content && <div>{content}</div>}
 		{actions && (
 			<div class="card-actions justify-end pt-4 mt-auto">
 				{actions}

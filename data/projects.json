@@ -22,7 +22,7 @@
   {
     "id": "rasteriser-raytracer",
     "title": "Interactive Ray-tracer",
-    "description": "Interactive C++ software rasteriser and ray-tracer from scratch.",
+    "description": "An interactive C++ software rasteriser and ray-tracer using SDL.",
     "content": [
       "Wrote an .obj and .mtl parser to load custom scenes and assets.",
       "Implemented rasterisation of triangle-based models in an SDL2 window with keyboard input to move camera.",
@@ -37,9 +37,12 @@
   {
     "id": "asymphony",
     "title": "ASyMphony / Music Machine",
-    "description": "...",
+    "description": "An assembly-like music programming language and integrated coding environment.",
     "content": [
-      "..."
+      "An instruction-based DSL for audio creation and scheduling.",
+      "Synthesiser and sampler built with the WebAudio API.",
+      "Exposed virtual machine for visual feedback.",
+      "Guided tutorial to teach assembly concepts."
     ],
     "media": [
       { "type": "image", "src": "/projects/asymphony/interface.png", "alt": "The ASyMphony Interface" }
@@ -50,9 +53,12 @@
   {
     "id": "risc-v-sim",
     "title": "RISC-V CPU Simulator",
-    "description": "A C++ RISC-V CPU simulator compiled for WebAssembly.",
+    "description": "A C++ RISC-V CPU simulator with Native and WebAssembly targets (work-in-progress).",
     "content": [
-      "..."
+      "Configurable-width superscalar architecture with out-of-order execution and in-order commit.",
+      "Speculative execution with configurable branch prediction policies.",
+      "Seven-stage pipeline (fetch, decode, dispatch, issue, execute, writeback, commit).",
+      "Implements the rv32im specification, with support for most of rv32f and minimal rv32v."
     ],
     "media": [
       { "type": "image", "src": "/projects/risc-v-sim/placeholder.png", "alt": "The Simulator Interface" }

@@ -4,24 +4,26 @@ import Header from '@sections/Header.astro';
 import Footer from '@sections/Footer.astro';
 import Hero from '@sections/Hero.astro';
 import About from '@sections/About.astro';
-import Education from '@sections/Education.astro';
-import Experience from '@sections/Experience.astro';
 import Projects from '@sections/Projects.astro';
+import Experience from '@sections/Experience.astro';
+import Education from '@sections/Education.astro';
+import Awards from '@sections/Awards.astro';
 ---
 
 <Layout title="Website" description="Finn Cooper">
 	<Header fixed links={[
-		{ name: "About", href: "/#about" },
-		{ name: "Education", href: "/#education" },
+		// { name: "About", href: "/#about" },
+		{ name: "Projects", href: "/#projects" },
 		{ name: "Experience", href: "/#experience" },
-		{ name: "Projects", href: "/#projects" }
+		{ name: "Education", href: "/#education" },
 	]}/>
 	<main class="flex flex-col flex-1">
 		<Hero/>
-		<About/>
-		<Education/>
-		<Experience/>
+		<!-- <About/> -->
 		<Projects/>
+		<Experience/>
+		<Education/>
+		<!-- <Awards/> -->
 	</main>
 	<Footer/>
 </Layout>
