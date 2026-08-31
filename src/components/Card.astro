@@ -10,7 +10,7 @@ interface Props {
 const { title, date, image, content, actions } = Astro.props as Props;
 ---
 
-<div class="card card-border border-secondary flex-1 bg-base-200 text-base-content shadow-lg">
+<div class="card card-border border-neutral flex-1 bg-base-200 text-base-content shadow-lg">
 	{image && (
 		<figure class="h-48 w-full overflow-hidden">
 			<img src={image} alt={title}/>
