@@ -13,15 +13,28 @@ const { fixed = false, links = [] } = Astro.props as Props;
 	<Panel weight={200}>
 		<nav class="navbar font-mono px-0">
 			<div class="flex-1">
-				<!-- active:bg-neutral/80 translate-0 -->
-				<a class="btn btn-ghost hover:bg-neutral shadow-none text-2xl" href="/"><span class="text-transparent bg-clip-text bg-gradient-to-r from-primary via-secondary to-accent">Home</span></a>
+				<!-- <a class="btn btn-ghost hover:bg-neutral shadow-none text-2xl" href="/"> -->
+					<span class="pl-3 text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary via-secondary to-accent">Finn Cooper</span>
+				<!-- </a> -->
 			</div>
-			<div class="flex-none">
+			<div class="hidden sm:flex flex-none">
 				<ul class="menu menu-horizontal px-1">
 					{links.map((link) => (
 						<li><a href={link.href}><p>{link.name}</p></a></li>
 					))}
 				</ul>
+			</div>
+			<div class="flex sm:hidden">
+				<div class="dropdown dropdown-end">
+					<div tabindex="0" role="button" class="btn btn-ghost hover:bg-neutral shadow-none">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu-icon lucide-menu"><path d="M4 5h16"/><path d="M4 12h16"/><path d="M4 19h16"/></svg>
+					</div>
+					<ul tabindex="-1" class="menu dropdown-content bg-base-200 rounded-box shadow-lg z-1">
+						{links.map((link) => (
+							<li><a href={link.href}><p>{link.name}</p></a></li>
+						))}
+					</ul>
+				</div>
 			</div>
 		</nav>
 	</Panel>
