@@ -5,12 +5,13 @@ interface Props {
 	image?: string;
 	content?: any;
 	actions?: any;
+	hover?: boolean;
 }
 
-const { title, date, image, content, actions } = Astro.props as Props;
+const { title, date, image, content, actions, hover } = Astro.props as Props;
 ---
 
-<div class="card card-border border-neutral flex-1 bg-base-200 text-base-content shadow-lg">
+<div class=`card card-border border-neutral flex-1 bg-base-200 text-base-content shadow-lg ${hover && "transition-transform hover:scale-105"}`>
 	{image && (
 		<figure class="h-48 w-full overflow-hidden">
 			<img src={image} alt={title}/>

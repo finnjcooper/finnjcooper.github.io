@@ -12,6 +12,7 @@ import Card from '@components/Card.astro';
 				image={project.media[0].src}
 				content={<p>{project.description}</p>}
 				actions={<button class="btn btn-sm btn-soft btn-info" popovertarget={project.id}>More Info</button>}
+				hover
 			/>
 
 			<div class="modal" id={project.id} popover>

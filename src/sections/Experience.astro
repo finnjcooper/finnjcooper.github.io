@@ -7,7 +7,10 @@ import Card from '@components/Card.astro';
 	<Card
 		title="Graduate Software Engineer - Graphcore Ltd"
 		date="2026-"
-		content={<p>Upcoming.</p>}
+		content={<>
+				<p>Member of the Kernel Engineering Team.</p>
+			</>}
+		hover
 	/>
 	<div class="flex flex-col md:flex-row gap-4">
 		<Card
@@ -20,6 +23,7 @@ import Card from '@components/Card.astro';
 					<li>Addressed questions about course structure and further study.</li>
 				</ul>
 			</>}
+			hover
 		/>
 		<Card
 			title="Graduate Teacher Level 2 - University of Bristol"
@@ -32,6 +36,7 @@ import Card from '@components/Card.astro';
 					<li>Gave weekly feedback on their progress and answered any questions.</li>
 				</ul>
 			</>}
+			hover
 		/>
 	</div>
 	<Card
@@ -44,5 +49,6 @@ import Card from '@components/Card.astro';
 				<li>Created an interactive VR game in Unity with a co-worker.</li>
 			</ul>
 		</>}
+		hover
 	/>
 </Section>
